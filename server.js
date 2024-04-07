@@ -42,10 +42,11 @@ app.use('/api/reservation', require('./src/routes/reservation'));
 app.use('/api/bike', require('./src/routes/bike'));
 app.use('/api/rating', require('./src/routes/rating'));
 
-const PORT = process.env.PORT || 5000;
+//const PORT = process.env.PORT || 5000;
+const baseurl="https://bike-rental-back.onrender.com"
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 // });
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(baseurl, () => console.log(`Server started on port ${baseurl}`));
